@@ -1,0 +1,105 @@
+@charset "utf-8";
+/* CSS Document */
+#wrapper {
+	margin: auto;
+	width: 70%;
+	min-width: 720px;
+}
+
+#header {
+    margin-left: auto;
+    margin-right: auto;
+    width: 440px;
+	text-align: center;
+	margin-top: 32px;
+}
+
+#logo {
+	margin: 0 auto;
+	margin-left: -15px;	
+	float: left;
+	padding-bottom: 32px;
+}
+
+h1 {display: none;}
+
+#nav {
+	list-style-type: none;
+	display: inline;
+	margin: 0 auto;
+	padding: 0;
+}
+
+#nav li {
+	float: left; 
+	margin-top: 55px;
+}
+
+#nav a {
+	width: 60px;
+	margin-left: 60px;
+	display: block;
+	text-decoration: none;
+}
+
+#nav h2 {
+	text-align: center;
+	font-family: "Amatic SC", sans-serif;
+	font-weight: 300;
+	font-size: 32px;
+	color: #c1c1c1;
+}
+
+#nav h2:hover {color: #383838}
+
+.clear {clear: both}
+
+.cards {
+	list-style-type: none;
+	width: 100%;
+	max-width: 1400px;
+	padding: 0;
+	position: absolute;
+	left: 50%;
+	margin-right: 50%;
+	transform: translate(-50%,0);
+	text-align: center;
+}
+
+.cards li {
+	width: 224px;
+	height: 256px;
+	display: inline-block;
+	box-shadow: 0px 3px 9px -2px #AAAAAA;
+	margin: 0 32px 32px 32px;
+	text-align: left;
+}
+
+.cardart {
+	margin: 12px;
+}
+
+p {
+	width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+	font-family: tahoma, sans-serif;
+	font-size: 13px;
+	color: #383838;
+	line-height: 2em;
+}
+
+/*ANIMATIONS*/
+@keyframes fadein {from{opacity:0}to{opacity:1}}
+@-moz-keyframes fadein {from{opacity:0}to{opacity:1}}
+@-webkit-keyframes fadein {from{opacity:0}to{opacity:1}}
+@-ms-keyframes fadein {from{opacity:0}to{opacity:1}}
+@-o-keyframes fadein {from{opacity: 0}to{opacity:1}}
+
+*.fadein {
+	-webkit-animation: fadein 0.5s; /* Safari, Chrome and Opera > 12.1 */
+	-moz-animation: fadein 0.5s; 	/* Firefox < 16 */
+	-ms-animation: fadein 0.5s; 	/* Internet Explorer */
+	-o-animation: fadein 0.5s; 		/* Opera < 12.1 */
+	animation: fadein 0.5s;
+}
